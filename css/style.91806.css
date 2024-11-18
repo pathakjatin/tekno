@@ -46789,3 +46789,137 @@ body[data-aos-duration] [data-aos^="sliding"] {
 .slide-fade-in-right {
   animation-name: slideFadeInRight;
 }
+/* Flex Container */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+
+/* Content Section */
+.content-section {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+
+/* Differences Section */
+.differences-section {
+  margin-top: 2rem;
+  margin: 0 2rem;
+
+  .differences-title{
+    padding-bottom:12px;
+  }
+}
+.info-list li{
+  padding:8px 0px;
+}
+.flex-container .section-title .section-text{
+  padding:8px 4px;
+}
+/* Table Container */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+  margin: 1rem 0;
+}
+
+/* Comparison Table */
+.comparison-table {
+  width: 100%;
+  min-width: 600px; /* Ensure table width doesn't shrink too much */
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+  .comparison-table th,
+  .comparison-table td {
+    font-size: 0.875rem; /* Reduce font size for better readability */
+    padding: 0.75rem; /* Adjust padding for smaller screens */
+  }
+}
+
+
+.choice-section{
+  padding: 12px 0px;
+  margin: 12px 16px;
+}
+
+/* Animations */
+@keyframes slideFadeInLeft {
+  from {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeInRight {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeInUp {
+  from {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.slide-fade-in-left {
+  animation-name: slideFadeInLeft;
+}
+
+.slide-fade-in-right {
+  animation-name: slideFadeInRight;
+}
+
+.slide-fade-in-up {
+  animation-name: slideFadeInUp;
+}
