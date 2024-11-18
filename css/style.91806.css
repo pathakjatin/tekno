@@ -46675,4 +46675,117 @@ body[data-aos-duration] [data-aos^="sliding"] {
   border: 1px solid #00f;
   z-index: 1;
 }
-/*# sourceMappingURL=https://assets.astrolighting.com/static/maps/css/style.css.c82f5.map */
+/* Global Styles */
+/* Flexbox Container */
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Blog Article */
+.blog-title{
+ padding-bottom:16px;
+}
+.blog-article {
+  flex: 2;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-title{
+  font-size: 2rem;
+  padding-top:12px;
+}
+/* Side Content */
+.side-content {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.side-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.side-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.side-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.side-list li {
+  margin-bottom: 0.5rem;
+}
+
+.side-list a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.side-list a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .blog-article,
+  .side-content {
+    animation-name: none; /* Disable animation for smaller screens */
+  }
+}
+/* Animation Keyframes */
+@keyframes slideFadeInLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeInRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation Classes */
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.slide-fade-in-left {
+  animation-name: slideFadeInLeft;
+}
+
+.slide-fade-in-right {
+  animation-name: slideFadeInRight;
+}
