@@ -1264,13 +1264,16 @@
           class="hero hero--horizontal-center hero--vertical-center hero--align-center hero--background-white hero--height-fixed hero--gradient-top hero--gradient-left"
         >
           <div class="hero__media js-hero-media" data-video-action="pause">
-            <iframe
-              id="hero-video-iframe"
-              src="https://player.vimeo.com/video/1024750470?background=1&amp;keyboard=0"
-              style="width: 133.33333333333vh; height: 75vw"
-              frameborder="0"
-              allow="autoplay"
-            ></iframe>
+            <video 
+                id="hero-video" 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                style="width: 133.33333333333vh; height: 75vw; object-fit: cover;">
+                <source src="./videoplayback.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             <div class="hero__toggle js-hero-toggle">
               <svg class="icon-play" role="img">
                 <use
