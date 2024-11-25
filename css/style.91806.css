@@ -46926,3 +46926,9 @@ body[data-aos-duration] [data-aos^="sliding"] {
 .block__carousel{
   margin-bottom:100px;
 }
+.proj_section .proj_title{
+  padding-top:-20px;
+}
+.proj_section .proj_image figure{
+  margin-bottom:4px;
+}
