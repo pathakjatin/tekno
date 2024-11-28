@@ -46932,3 +46932,9 @@ body[data-aos-duration] [data-aos^="sliding"] {
 .proj_section .proj_image figure{
   margin-bottom:4px;
 }
+@media screen and (max-width: 400px) {
+  .hero__title{
+    font-size:26px;
+    text-align:left;
+  }
+}
