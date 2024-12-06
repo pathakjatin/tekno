@@ -41337,7 +41337,7 @@ a:hover .sliding-accordion__button + .sliding-accordion__label {
 #onetrust-banner-sdk.otFloatingFlat #onetrust-policy .banner-header:empty {
   display: none;
 }
-#onetrust-banner-sdk.otFloatingFlat #onetrust-policy #onetrust-policy-text {
+/* #onetrust-banner-sdk.otFloatingFlat #onetrust-policy #onetrust-policy-text {
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -41416,8 +41416,8 @@ a:hover .sliding-accordion__button + .sliding-accordion__label {
 }
 #onetrust-banner-sdk.otCenterRounded #onetrust-policy-text a {
   transition: color, 0.3s ease;
-}
-#onetrust-banner-sdk.otCenterRounded #onetrust-policy-text a:hover {
+} */
+/* #onetrust-banner-sdk.otCenterRounded #onetrust-policy-text a:hover {
   color: #000 !important;
 }
 #onetrust-banner-sdk.otCenterRounded #onetrust-button-group {
@@ -41443,8 +41443,8 @@ a:hover .sliding-accordion__button + .sliding-accordion__label {
   #onetrust-banner-sdk #onetrust-policy-text {
     padding-right: 0 !important;
   }
-}
-#onetrust-banner-sdk .onetrust-close-btn-handler {
+} */
+/* #onetrust-banner-sdk .onetrust-close-btn-handler {
   height: 20px !important;
   width: 20px !important;
 }
@@ -41462,7 +41462,7 @@ a:hover .sliding-accordion__button + .sliding-accordion__label {
   display: inline !important;
   margin: 0 !important;
   font-weight: 200 !important;
-}
+} */
 #ot-pc-content.ot-pc-scrollbar {
   padding-bottom: 40px !important;
 }
@@ -41492,7 +41492,7 @@ a:hover .sliding-accordion__button + .sliding-accordion__label {
 [id^="ot-header-id"] {
   font-size: 16px !important;
 }
-#onetrust-consent-sdk * {
+/* #onetrust-consent-sdk * {
   font-weight: 200 !important;
 }
 #onetrust-consent-sdk * #accept-recommended-btn-handler,
@@ -41559,7 +41559,7 @@ a:hover .sliding-accordion__button + .sliding-accordion__label {
 }
 #onetrust-button-group-parent #onetrust-pc-btn-handler:hover {
   color: #8499a5 !important;
-}
+} */
 .otPcCenter {
   width: 50% !important;
   max-width: 650px !important;
@@ -46927,10 +46927,16 @@ body[data-aos-duration] [data-aos^="sliding"] {
   margin-bottom:100px;
 }
 .proj_section .proj_title{
-  padding-top:-20px;
+  margin-top:-50px;
 }
 .proj_section .proj_image figure{
-  margin-bottom:4px;
+  
+}
+#project_title1{
+  margin-top:-50px;
+}
+#project_title2{
+  margin-top:-50px;
 }
 @media screen and (max-width: 400px) {
   .hero__title{

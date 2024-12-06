@@ -1,4 +1,4 @@
-/*! @vimeo/player v2.24.0 | (c) 2024 Vimeo | MIT License | https://github.com/vimeo/player.js */
+
 !(function (e, t) {
   "object" == typeof exports && "undefined" != typeof module
     ? (module.exports = t())
