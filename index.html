@@ -233,7 +233,7 @@
             </select>
           </div> -->
 
-          <div class="header__links m-false">
+          <!-- <div class="header__links m-false">
             <a
               href="/"
               data-action="login"
@@ -243,7 +243,7 @@
               class="header__link"
               >Login</a
             >
-          </div>
+          </div> -->
 
           <div class="header__links l-false m-flex">
             <a href="/" class="header-logo ">
@@ -2170,7 +2170,7 @@
                           alt=""
                           height="1000"
                           sizes="(max-width: 700px) 40vw, (max-width: 1023px) calc((100vw - 70px) / 3), (max-width: 1600px) calc((100vw - 200px) / 3), 467px"
-                          src="./images/projects/BATHROOM.jpeg"
+                          src="./images/projects/BATHROOM.jpg"
                           
                           width="800"
                         />
@@ -2435,62 +2435,58 @@
             id="block-658"
             data-block-id="658"
           >
-            <div class="wrap">
-              <div class="carousel--awards">
-                <div class="block__header">
-                  <h4 class="block__heading">Clients &amp; Associations</h4>
-                  <div class="block__carousel-nav"></div>
-                </div>
-
-                <div class="block__content js-carousel--awards">
-                  <figure class="block__image">
-                    <img
-                      alt="LIT Lighting Design Awards Logo"
-                      class=""
-                      height="145"
-                      src="./images/client_logos/1.png"
-                      width="240"
-                    />
-                  </figure>
-                  <figure class="block__image">
-                    <img
-                      alt="London Design Awards 2024"
-                      class=""
-                      height="145"
-                      src="./images/client_logos/2.png"
-                      width="240"
-                    />
-                  </figure>
-                  <figure class="block__image">
-                    <img
-                      alt="EDA Logo"
-                      class=""
-                      height="145"
-                      src="./images/client_logos/3.png"
-                      width="240"
-                    />
-                  </figure>
-                  <figure class="block__image">
-                    <img
-                      alt="NY Product Design Awards 2023 logo"
-                      class=""
-                      height="145"
-                      src="./images/client_logos/4.png"
-                      width="240"
-                    />
-                  </figure>
-                  <figure class="block__image">
-                    <img
-                      alt="Muse Design Award logo "
-                      class=""
-                      height="145"
-                      src="./images/client_logos/5.png"
-                      width="240"
-                    />
-                  </figure>
-                </div>
+          <div class="block wrap">
+            <div class="block carousel-clients">
+              <div>
+                <h4 class="block__heading client__heading">Clients &amp; Associations</h4>
+                <div class="block__carousel-nav"></div>
+              </div>
+          
+              <div class="block block__content js-carousel--awards content-clients">
+                <figure class="block__image client__image">
+                  <img
+                    alt="LIT Lighting Design Awards Logo"
+                    height="145"
+                    src="./images/client_logos/1.png"
+                    width="240"
+                  />
+                </figure>
+                <figure class="block__image client__image">
+                  <img
+                    alt="London Design Awards 2024"
+                    height="145"
+                    src="./images/client_logos/2.png"
+                    width="240"
+                  />
+                </figure>
+                <figure class="block__image client__image">
+                  <img
+                    alt="EDA Logo"
+                    height="145"
+                    src="./images/client_logos/3.png"
+                    width="240"
+                  />
+                </figure>
+                <figure class="block__image client__image">
+                  <img
+                    alt="NY Product Design Awards 2023 logo"
+                    height="145"
+                    src="./images/client_logos/4.png"
+                    width="240"
+                  />
+                </figure>
+                <figure class="block__image client__image">
+                  <img
+                    alt=""
+                    height="145"
+                    src="./images/client_logos/5.png"
+                    width="240"
+                  />
+                </figure>
               </div>
             </div>
+          </div>
+          
           </section>
           <section
             class="block block--social block--background-light-stone block--text-dark"
@@ -2565,7 +2561,7 @@
                       alt=""
                       class=""
                       height="400"
-                      src="./images/projects/insta1.jpg"
+                      src="./images/projects/insta7.webp"
                       width="400"
                     />
                   </figure>
@@ -2930,6 +2926,34 @@
         </div>
       </div>
     </div>
+
+    <script>
+      
+      const elementsToAnimate = document.querySelectorAll('.client__heading, .client__image');
+
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate'); // Add animation class
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      };
+
+      
+      const observerOptions = {
+        root: null, // Use the viewport as the container
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      };
+
+      
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      
+      elementsToAnimate.forEach((element) => observer.observe(element));
+
+    </script>
 
     <script>
       var Astro = Astro || {};
