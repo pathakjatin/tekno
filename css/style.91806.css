@@ -30368,7 +30368,7 @@ input[type="radio"]:checked + .radio-replace--button:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45px;
+  /* height: 45px; */
   transition: background-color 0.3s ease;
   padding: 0 40px;
   max-width: 1600px;
@@ -36351,7 +36351,7 @@ input.search__input:focus {
 .block--awards .block__image img,
 .block--logos .block__image img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 .block--banner {
   --richtext-color: var(--block-text-color, $c-black);
